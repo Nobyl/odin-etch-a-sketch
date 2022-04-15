@@ -13,3 +13,8 @@ for (let i = 0; i < 16; i++) {
 
     grid.appendChild(column);
 }
+
+const cells = document.querySelectorAll(".cell");
+cells.forEach(cell => cell.addEventListener("mouseover", () => {
+    cell.style.backgroundColor = "black";
+}));
